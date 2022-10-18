@@ -66,7 +66,6 @@ int _printf(const char *format, ...)
 			return (count);
 
 		f = check_for_specifiers(&format[i + 1]);
-
 		if (f != NULL)
 		{
 			count += f(valist);
@@ -85,7 +84,6 @@ int _printf(const char *format, ...)
 		else
 			i++;
 	}
-
 	va_end(valist);
 	return (count);
 }
